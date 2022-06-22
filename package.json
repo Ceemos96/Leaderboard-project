@@ -1,5 +1,5 @@
 {
-  "name": "webpack-boilerplate-project",
+  "name": "leaderboard-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ceemos96/Webpack-boilerplate-project.git"
+    "url": "git+https://github.com/Ceemos96/Leaderboad-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ceemos96/Webpack-boilerplate-project/issues"
+    "url": "https://github.com/Ceemos96/Leaderboad-project/issues"
   },
-  "homepage": "https://github.com/Ceemos96/Webpack-boilerplate-project#readme",
+  "homepage": "https://github.com/Ceemos96/Leaderboad-project#readme",
   "dependencies": {
     "lodash": "^4.17.21"
   },
