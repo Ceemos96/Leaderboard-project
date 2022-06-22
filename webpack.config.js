@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
@@ -20,15 +21,18 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.scss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
     ],
   },
+  devtool: 'inline-source-map',
   devServer: {
-      static: path.join(__dirname, 'dist')
-  }, 
-  mode: 'development'
-  
-
+    static: './dist',
+    liveReload: true,
+  },
 };
