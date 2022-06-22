@@ -1,7 +1,24 @@
-body {
-    background-color: bisque;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+*, ::after,::before {
+    box-sizing: border-box;
 }
 
-.hello {
-    color: red;
-  }
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.sub-title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+ul :nth-child(even){
+    background: rgb(242, 241, 241);
+}
+
+.name {
+    display: inline-block;
+    width: 100px;
+}
+
