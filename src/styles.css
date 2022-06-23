@@ -15,7 +15,7 @@ body {
   font-weight: 600;
 }
 
-ul :nth-child(even) {
+ul li:nth-child(even) {
   background: rgb(242, 241, 241);
 }
 
