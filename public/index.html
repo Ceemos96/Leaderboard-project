@@ -15,47 +15,28 @@
           <p>
             <span class="sub-title"> Recent scores </span>
             <span>
-              <button type="submit">Refresh</button>
+              <button type="button" id="refresh">Refresh</button>
             </span>
           </p>
 
-          <ul id="scores-list" class="list-unstyled border">
-            <li class="score-item p-2">
-              <span class="name">Wale</span>
-              <span>:</span>
-              <span class="score">150</span>
-            </li>
-            <li class="score-item p-2">
-              <span class="name">Mandal</span>
-              <span>:</span>
-              <span class="score">130</span>
-            </li>
-            <li class="score-item p-2">
-              <span class="name">Bartosz</span>
-              <span>:</span>
-              <span class="score">110</span>
-            </li>
-            <li class="score-item p-2">
-              <span class="name">Ceemos</span>
-              <span>:</span>
-              <span class="score">130</span>
-            </li>
-          </ul>
+          <ul id="scores-list" class="list-unstyled border"></ul>
         </div>
-        <div id="input-fields" class="d-flex flex-column">
+        <form id="input-fields" class="d-flex flex-column">
           <h2 id="field-title">Add your score</h2>
           <input
             type="text"
             placeholder="Your Name"
             class="p-2 my-2 user-input"
+            id="user-name"
           />
           <input
             type="text"
             placeholder="Your score"
             class="p-2 my-2 user-input"
+            id="user-score"
           />
           <button type="submit" class="d-block ms-auto w-50">Submit</button>
-        </div>
+        </form>
       </div>
     </section>
   </body>
