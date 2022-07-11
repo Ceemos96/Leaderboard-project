@@ -11,7 +11,7 @@
 - Linter
 
 ## Link to project online
-- [Online Version](https://ceemos96.github.io/leaderboard-project/)
+- [Online Version](https://ceemos96.github.io/Leaderboard-project/dist/)
 
 ## Getting Started
 
