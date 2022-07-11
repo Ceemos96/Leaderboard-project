@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard Project</title>
     <script src="../dist/main.js"></script>
-<script defer src="main.js"></script></head>
-<body>
-    
-</body>
+  <script defer src="main.js"></script></head>
+  <body>
+    <section id="leaderboard-wrapper" class="container w-75">
+      <header class="container-fluid p-5">
+        <h1 id="leaderboard-title" class="my-4 fw-bold">
+          <span class="text-primary">Mariokart </span>Leaderboard
+        </h1>
+      </header>
+      <div class="d-flex justify-content-around flex-wrap">
+        <div id="scores">
+          <p>
+            <span class="sub-title"> Recent scores </span>
+            <span>
+              <button
+                type="button"
+                id="refresh"
+                class="bg-primary text-light border border-none rounded p-2"
+              >
+                Refresh
+              </button>
+            </span>
+          </p>
+
+          <ul id="scores-list" class="list-unstyled border rounded"></ul>
+        </div>
+        <form id="input-fields" class="d-flex flex-column">
+          <h2 id="field-title">Add your score</h2>
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="p-2 my-2 user-input rounded"
+            id="user-name"
+          />
+          <input
+            type="text"
+            placeholder="Your score"
+            class="p-2 my-2 user-input rounded"
+            id="user-score"
+          />
+          <button
+            type="submit"
+            class="d-block ms-auto w-50 bg-primary text-light border border-none rounded p-2"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
